@@ -1,0 +1,282 @@
+body {
+    background-color: whitesmoke;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* Phần @media nên sắp xếp theo thứ tự tăng dần của điều kiện */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .content1 {
+        color: black;
+        top: 50px;
+        left: 50px;
+    }
+    .img1 {
+        /* visibility: hidden; */
+        display: none;
+    }
+    .hr {
+        margin-top: 209px !important;
+    }
+    .content2 {
+        margin-top: 30px !important;
+    }
+    #menu ul {
+        background-color: #333;
+    }
+    #menu li a {
+        color: white;
+        animation: 2s 1s infinite mobile-font;
+    }
+    @keyframes mobile-font {
+        0% {
+            color: brown;
+        }
+        50% {
+            color: chartreuse;
+        }
+        0% {
+            color: cyan;
+        }
+    }
+    .content2 {
+        margin-top: 10px;
+    }
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .content1 {
+        color: black;
+        top: 50px;
+        left: 50px;
+    }
+    .img1 {
+        /* visibility: hidden; */
+        display: none;
+    }
+    .hr {
+        margin-top: 209px !important;
+    }
+    .content2 {
+        margin-top: 30px !important;
+    }
+    #menu ul {
+        background-color: #333;
+    }
+    #menu li a {
+        color: white;
+        animation: 4s 1s infinite tablet-font;
+    }
+    @keyframes tablet-font {
+        0% {
+            color: brown;
+        }
+        25%{
+            color: blue;
+        }
+        50% {
+            color: chartreuse;
+        }
+        75%{
+            color: blueviolet;
+        }
+        0% {
+            color: cyan;
+        }
+    }
+    .content2 {
+        margin-top: 10px;
+    }
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* For desktop: */
+    .content1 {
+        color: white;
+        top: 170px;
+        left: 50px;
+    }
+    #menu ul {
+        background-color: white;
+    }
+    #menu li a {
+        color: black;
+    }
+    .img1 {
+        display: block;
+        /* visibility: visible; */
+        width: 100%;
+        height: auto;
+    }
+
+    .hr {
+        margin-top: -150px !important;
+        margin-bottom: -30px !important;
+    }
+
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    background-color: green;
+}
+
+#banner {
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.content1 {
+    position: absolute;
+    font-family: serif;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 1000;
+    word-spacing: 2px;
+}
+
+.img1 {
+    width: 100%;
+    height: auto;
+}
+
+.content2 {
+    /* thay cho background-color */
+    background: linear-gradient(45deg, red, green);
+    padding: 30px 30px 30px 70px;
+    margin-top: 0%;
+    word-spacing: 2px;
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+.div1 {
+    float: left;
+    padding: 10px 30px 10px 0px;
+    border-radius: 20px;
+}
+
+.div2 {
+    float: left;
+    padding: 10px 30px 10px 0px;
+}
+
+.div3 {
+    float: left;
+    padding: 10px 30px 10px 0px;
+}
+
+#footer {
+    right: 0px;
+    padding: 10px 10px 30px 70px;
+}
