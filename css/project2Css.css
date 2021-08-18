@@ -1,5 +1,6 @@
 body {
     background-color: whitesmoke;
+    font-family: 'Style Script', cursive;
 }
 
 * {
@@ -57,11 +58,9 @@ body {
     .content2 {
         margin-top: 10px;
     }
-
-    .img3{
+    .img3 {
         height: auto !important;
     }
-
     [class*="col-"] {
         width: 100%;
     }
@@ -95,13 +94,13 @@ body {
         0% {
             color: brown;
         }
-        25%{
+        25% {
             color: blue;
         }
         50% {
             color: chartreuse;
         }
-        75%{
+        75% {
             color: blueviolet;
         }
         0% {
@@ -111,11 +110,9 @@ body {
     .content2 {
         margin-top: 10px;
     }
-
-    .img3{
+    .img3 {
         height: auto !important;
     }
-
     .col-s-1 {
         width: 8.33%;
     }
@@ -173,16 +170,16 @@ body {
         width: 100%;
         height: auto;
     }
-
     .hr {
         margin-top: -150px !important;
         margin-bottom: -30px !important;
     }
-
-    .img3{
+    .img3 {
         height: 605px !important;
     }
-
+    .row .col-5 {
+        height: 600px !important;
+    }
     .col-1 {
         width: 8.33%;
     }
@@ -293,4 +290,31 @@ h2 {
 #footer {
     right: 0px;
     padding: 10px 10px 30px 70px;
+}
+
+.image-div{
+    float: left;
+    padding: 30px 100px 100px 100px;
+}
+
+.event-content{
+    margin-top: 30px;
+}
+
+.event-content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.event-content strong{
+    margin-left: 80px;
+    text-align: justify;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.event-content p{
+    margin-left: 80px;
+    margin-bottom: 30px;
+    text-align: justify;
 }
